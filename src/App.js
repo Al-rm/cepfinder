@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container">
+        <div className='title_div'>
+          <h1 className='title'>CEPFINDER</h1>
+          <div className='container_input'>
+            <input className='input_search' type='text' placeholder="CEP NUMBER..." />
+            <button className='button_search'>
+              🔎
+            </button>
+          </div>
+        </div>
+
+        <main className="main">
+          <h2>CEP 000.000-000</h2>
+          <span>Rua</span>
+          <span>Bairro</span>
+          <span>Cidade</span>
+          <span>Estado</span>
+
+
+        </main>
+        
+      </div>
+      
+    </>
   );
 }
 

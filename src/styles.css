@@ -1,0 +1,118 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(black, rgb(30, 0, 37));
+    color: antiquewhite;
+    min-height: 250px;
+  }
+.title_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.title {
+    font-size: 3rem;
+    animation: flipTitle 1s;
+}
+.container_input{
+    display: flex;
+    background: transparent;
+    border: 0;
+    outline: none;
+    margin: .3rem 0;
+    padding: 0.25rem 0.75rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(250, 235, 215, 0.1);
+    border-radius: 3%;
+}
+.input_search{
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+.button_search{
+    background-color: transparent;
+    font-size: 1.55rem;
+    margin-left: 1.25rem;
+    border: 0;
+    cursor: pointer;
+    transition: transform 0.1s
+}
+.button_search:hover{
+    transform: scale(1.2);
+}
+.main {
+    width: 75%;
+    border-top: .3vh ridge antiquewhite;
+    font-size: 1.25rem;
+    margin-top: 3%;
+    padding: 3.75vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(250, 235, 215, 0.155);
+}
+.main h2{
+    display: flex;
+    font-size: 1.7rem;
+    margin: 0;
+    justify-content: center;
+}
+.main span {
+    margin: 1.5% 0;
+
+}
+
+@media (max-width: 620px) {
+    .title{
+        font-size: 2.15rem;
+    }
+    .main h2{
+        margin: 0;
+        font-size: 1.25rem;
+    }
+    .main span {
+        margin: 1% 0;
+        font-size: small;
+    }
+
+}
+
+@media (max-height: 480px) {
+    .title_div {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .title{
+        font-size: 1.75rem;
+    }
+    .main{
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 0.7 rem;
+    }
+    .main h2{
+        margin: 0;
+        font-size: 1.25rem;
+    }
+    .main span {
+        margin: 1% 0;
+        font-size: small;
+    }
+}
+
+@keyframes flipTitle {
+    from {
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
