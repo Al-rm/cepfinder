@@ -35,7 +35,9 @@
 .container_input input{
     background-color: transparent;
     border: 0;
+    font-size: .75rem;
     color: white;
+    width: 50vw;
 }
 .button_search{
     background-color: transparent;
@@ -44,6 +46,7 @@
     border: 0;
     cursor: pointer;
     transition: transform 0.1s;
+    text-shadow: .1rem .2rem .3rem rgba(0, 0, 0, 0.3);
 }
 .button_search:hover{
     transform: scale(1.2);
@@ -54,7 +57,7 @@
     width: 75%;
     border-top: .3vh ridge antiquewhite;
     font-size: 1.25rem;
-    margin-top: 15%;
+    margin-top: 5%;
     padding: 3.75vh;
     display: flex;
     flex-direction: column;
@@ -96,7 +99,7 @@
         font-size: 1.75rem;
     }
     .main{
-        margin-top: 5%;
+        margin-top: 2.5%;
         padding-top: 0;
         font-size: 0.7 rem;
     }
